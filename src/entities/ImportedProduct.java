@@ -18,6 +18,6 @@ public class ImportedProduct extends Product {
 
     @Override
     public String priceTag() {
-        return getName() + " $ " + totalPrice(customsFee);
+        return getName() + " $ " + totalPrice(customsFee) + "(Customs fee: $ " + customsFee + ")";
     }
 }
